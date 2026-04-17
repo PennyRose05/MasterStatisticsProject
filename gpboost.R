@@ -22,14 +22,14 @@ set.seed(2025)
 ## choose state(s) to run analysis on
 StateNameNum <- read.csv("StateNumToAbb.csv",colClasses = c(Number = "character"))
 
-# choose_state <- c("ME","VT","NH","MA","RI","CT","NY","NJ","PA","DE","MD", "DC") # northeast states, 4655
-# choose_state <- c("GA","NC","SC","VA") # southeast coast, 6715
-# choose_state <- c("AR","TN","WV","KY") # appalachian, 5075
-# choose_state <- c("FL","AL","MS","LA") # gulf coast, 4358
-# choose_state <- c("AZ","NM","OK","TX") #Southwest states, 5694
-# choose_state <- c("WI","MI","OH","IL","IN") # great lakes, 6801
-# choose_state <- c("ND","SD","NE","KS","MN","IA","MO") # midwest states, 8910
-# choose_state <- c("WA","MT","ID","WY","CO","UT","NV","CA","OR") # western states, 5653
+# choose_state <- c("ME","VT","NH","MA","RI","CT","NY","NJ","PA","DE","MD", "DC") # northeast states
+# choose_state <- c("GA","NC","SC","VA") # southeast coast
+# choose_state <- c("AR","TN","WV","KY") # appalachian
+# choose_state <- c("FL","AL","MS","LA") # gulf coast
+# choose_state <- c("AZ","NM","OK","TX") #Southwest states
+# choose_state <- c("WI","MI","OH","IL","IN") # great lakes
+# choose_state <- c("ND","SD","NE","KS","MN","IA","MO") # midwest states
+# choose_state <- c("WA","MT","ID","WY","CO","UT","NV","CA","OR") # western states
 
 choose_state <- c("WV") # west Virginia
 
@@ -67,8 +67,8 @@ data_train <- data.matrix(data[data$Year < test_yr,])
 data_test <- data.matrix(data[data$Year == test_yr,])
 
 # about fitting GPBoost
-# there are three types here. Gaussian Process by group, Gaussian Process by cluster, Gaussian Process (shared): Time
-# just run the model types that you want to run. There are 4 places where the code changes based on what model you choose. 
+# there are three types here: Gaussian Process by group, Gaussian Process by cluster, Gaussian Process (shared): Time
+# There are 4 places where the code changes based on what model you choose. 
 # They are: FIT GPBOOST model, TRAIN MODEL, TRAINING PREDICTION, TEST PREDICTION
 # Gaussian Process by cluster is NOT include in my write up
 
