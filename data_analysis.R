@@ -2,7 +2,7 @@
 # Master's project code
 # 2026
 
-# ACS state level POPULATION DATA retrieval code at bottom
+# ACS retrieval code at bottom
 
 source("FunctionsCntyDeath.R")
 data <- getOverdoseData("all","all",more=TRUE)
