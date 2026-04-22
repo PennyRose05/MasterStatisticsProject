@@ -1,4 +1,4 @@
-A Comparison of Spatial and Temporal Models and the Interaction of Various Socioeconomic Variables Conducted on the County Level Drug Overdose Rate
+A Comparison of Spatial and Temporal Models Conducted on the County Level Drug Overdose Rate and the Interaction of Various Socioeconomic Variables
 
 Master of Arts in Statistics project by Penelope Overholt. University of Missouri - Columbia, Spring Semester 2026.
 
